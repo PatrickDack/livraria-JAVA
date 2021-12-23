@@ -12,12 +12,6 @@ public class RegrasDeDesconto {
 
     System.out.println("Valor atual: " + livro.getValor());
 
-    if (!livro.aplicaDescontosDe(0.3)) {
-      System.out.println("Desconto não pode ser maior que 30%");
-    } else {
-      System.out.println("Valor com Desconto: " + livro.getValor());
-    }
-
     LivroFisico livroFisico = new LivroFisico(autor);
     livroFisico.setValor(59.90);
 
