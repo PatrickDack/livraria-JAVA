@@ -3,6 +3,7 @@ package br.com.estudos.livraria.teste;
 import br.com.estudos.livraria.Autor;
 import br.com.estudos.livraria.produto.Ebook;
 import br.com.estudos.livraria.produto.LivroFisico;
+import br.com.estudos.livraria.produto.Produto;
 
 public class RegistroDeVendas {
   public static void main(String[] args) {
@@ -25,6 +26,10 @@ public class RegistroDeVendas {
     carrinho.adiciona(fisico);
     carrinho.adiciona(ebook);
 
-    System.out.println("Total " + carrinho.getTotal());
+    // Produto[] produtos = carrinho.getProdutos();
+
+    // for (Produto produto : produtos) {
+    //   System.out.println(produto.getValor());
+    // }
   }
 }
