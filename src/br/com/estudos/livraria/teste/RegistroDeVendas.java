@@ -1,5 +1,7 @@
 package br.com.estudos.livraria.teste;
 
+import java.util.List;
+
 import br.com.estudos.livraria.Autor;
 import br.com.estudos.livraria.produto.Ebook;
 import br.com.estudos.livraria.produto.LivroFisico;
@@ -26,10 +28,10 @@ public class RegistroDeVendas {
     carrinho.adiciona(fisico);
     carrinho.adiciona(ebook);
 
-    // Produto[] produtos = carrinho.getProdutos();
+    List<Produto> produtos = carrinho.getProdutos();
 
-    // for (Produto produto : produtos) {
-    //   System.out.println(produto.getValor());
-    // }
+    for (Produto produto : produtos) {
+      System.out.println(produto.getValor());
+    }
   }
 }

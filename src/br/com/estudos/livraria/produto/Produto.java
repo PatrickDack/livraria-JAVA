@@ -1,6 +1,5 @@
 package br.com.estudos.livraria.produto;
 
-@FunctionalInterface
-public interface Produto {
+public interface Produto extends Comparable<Produto> {
   double getValor();
 }
